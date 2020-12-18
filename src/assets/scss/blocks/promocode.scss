@@ -1,0 +1,109 @@
+.promocode {
+	padding-bottom: 2rem;
+}
+
+.promocode__label {
+	margin: 2rem;
+
+	font-weight: 500;
+	font-size: 1.6rem;
+	color: lighten($red, 25%);
+}
+
+.promocode__item {
+	display: flex;
+	align-items: center;
+	padding: 2rem 0;
+	margin-bottom: 0.8rem;
+
+	background-color: $gray;
+	border-radius: 5px;
+
+	&:last-child {
+		margin-bottom: 0;
+	}
+}
+
+.promocode__value {
+	width: 30%;
+	padding: 0 3rem;
+}
+
+.promocode__number {
+	color: $red;
+	text-decoration: none;
+	font-size: 6rem;
+	font-weight: 500;
+
+	&:hover {
+		font-weight: 700;
+	}
+}
+
+.promocode__valid {
+	color: $secondary;
+}
+
+.promocode__info {
+	width: 70%;
+	padding: 0 3rem;
+
+	text-align: center;
+}
+
+.promocode__title {
+	margin-bottom: 1rem;
+
+	font-size: 2.8rem;
+
+	a {
+		color: inherit;
+		text-decoration: none;
+	}
+}
+
+.promocode__text{
+	color: $secondary;
+
+	strong {
+		font-weight: 700;
+	}
+}
+
+.promocode__wrap {
+	margin-top: 2rem;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.promocode__coupon {
+	padding: 1rem;
+	font-size: 3.6rem;
+	line-height: .9;
+
+	border: 3px dashed $red;
+
+	a {
+		text-decoration: none;
+		color: inherit;
+	}
+}
+
+.promocode__link {
+	display: block;
+	padding: 1.2rem;
+	height: fit-content;
+
+	background-color: $primary;
+	border-radius: 10px;
+	color: $white;
+	line-height: 1;
+	font-size: 1.6rem;
+	font-weight: 500;
+	text-decoration: none;
+
+	&:hover {
+		background-color: darken($primary, 5%);
+	}
+}

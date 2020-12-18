@@ -1,0 +1,122 @@
+.card {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+
+	margin: 0 -1rem;
+
+	&--green {
+
+		.card__item {
+			background-color: $light-green;
+
+			.card__offer {
+				background-color: $white;
+			}
+		}
+	}
+}
+
+.card__item {
+	width: 31.6944%;
+	margin: 1rem;
+	padding: 1rem;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+
+	border-radius: 5px;
+	background-color: $gray;
+	overflow: hidden;
+
+	&--small {
+		width: 15.0281%;
+
+		.card__text {
+			margin-bottom: 1rem;
+		}
+	}
+
+	span {
+		color: $red;
+		font-weight: 700;
+	}
+
+	a {
+		text-decoration: none;
+		color: $primary;
+
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+}
+
+.card__header {
+
+}
+
+.card__title {
+	margin-bottom: 1rem;
+
+	font-size: 2rem;
+	font-weight: 500;
+}
+
+.card__img {
+	width: 100%;
+	max-height: 155px;
+	height: auto;
+	margin-bottom: 1rem;
+
+	object-fit: cover;
+}
+
+.card__subtitle {
+	margin-bottom: 1rem;
+	color: $secondary;
+
+	font-size: 1.5rem;
+
+
+}
+
+.card__text {
+	padding: 0 1rem;
+	margin-bottom: 2rem;
+
+	color: $secondary;
+}
+
+.card__offer {
+	background-color: lighten($light-green, 5%);
+	font-size: 1.6rem;
+	margin-bottom: 2rem;
+
+	span {
+		display: block;
+		padding: 0.5rem;
+
+		font-weight: 700;
+		color: $red;
+
+		border-radius: 5px;
+	}
+}
+
+.card__link {
+	display: inline-block;
+	padding: 1.5rem;
+
+	background-color: $primary;
+	border-radius: 10px;
+	font-size: 1.8rem;
+	line-height: 1;
+	color: $gray !important;
+	text-decoration: none;
+
+	&:hover {
+		background-color: darken($primary, 5%);
+	}
+}

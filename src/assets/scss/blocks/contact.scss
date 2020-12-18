@@ -1,0 +1,74 @@
+.contact {
+	margin: 4rem;
+	text-align: center;
+	color: $secondary;
+}
+
+.contact__title {
+	margin-bottom: 1rem;
+
+	font-weight: 500;
+	font-size: 4.2rem;
+}
+
+.contact__text {
+	margin-bottom: 5rem;
+
+	font-size: 2rem;
+}
+
+.contact__form {
+	max-width: 450px;
+	width: 100%;
+	padding: 2rem;
+	margin: 0 auto;
+
+	border: 1px solid $secondary;
+	border-radius: 5px;
+}
+
+.contact__input,
+.contact__textarea {
+	width: 100%;
+	margin-bottom: 2rem;
+	padding: 1rem;
+
+	border: none;
+	border-bottom: 1px solid $secondary;
+	color: inherit;
+	font-size: 1.6rem;
+}
+
+.contact__input {
+
+
+	&::placeholder {
+		font-size: 1.4rem;
+		color: lighten($primary, 5%);
+	}
+
+	&:focus {
+		background-color: $gray;
+	}
+}
+
+.contact__textarea {
+	height: 200px;
+
+	resize: none;
+	font-family: inherit;
+
+}
+
+.contact__btn {
+	padding: 1rem;
+	min-width: 140px;
+
+	background-color: $primary;
+	color: $gray;
+	font-weight: 500;
+	font-size: 1.6rem;
+	border: none;
+	border-radius: 10px;
+
+}

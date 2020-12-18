@@ -1,0 +1,44 @@
+.intro {
+	margin-top: 3rem;
+}
+
+.intro__inner {
+	display: flex;
+	justify-content: space-between;
+
+}
+
+.intro__about {
+	width: 75%;
+	position: relative;
+}
+
+.intro__img {
+	width: 100%;
+	height: auto;
+}
+
+.intro__content {
+	position: absolute;
+	top: 50%;
+	z-index: 1;
+
+	width: 100%;
+	padding: 4rem;
+
+	transform: translateY(-50%);
+}
+
+.intro__title {
+	margin-bottom: 3rem;
+
+	color: $secondary;
+	font-size: 4.6rem;
+	font-weight: 700;
+	line-height: 1;
+}
+
+.intro__text {
+	width: 70%;
+	font-size: 1.6rem;
+}

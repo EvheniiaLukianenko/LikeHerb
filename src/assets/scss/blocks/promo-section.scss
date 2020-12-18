@@ -1,0 +1,38 @@
+.promo-section {
+	padding: 2rem 0;
+	text-align: center;
+
+	&--green {
+		background-color: $light-green;
+
+		.promo__text {
+			border-bottom: 2px solid $primary;
+			border-top: 2px solid $primary;
+		}
+	}
+}
+
+.promo__text {
+	padding: 1rem;
+	margin-bottom: 2rem;
+
+	color: $secondary;
+	border-bottom: 2px solid $gray;
+	border-top: 2px solid $gray;
+
+}
+
+.promo__title {
+	margin-bottom: 1rem;
+
+	font-size: 3rem;
+
+	b {
+		font-weight: 700;
+	}
+}
+
+.promo__subtitle {
+	font-size: 2.4rem;
+	font-weight: 700;
+}
