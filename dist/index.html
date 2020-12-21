@@ -43,19 +43,25 @@
 	    <section class="intro">
 	    	<div class="container">
 	    		<div class="intro__inner">
-	    			<nav class="nav">
+	    			<button class="nav-toggle" id="nav_toggle" type="button">
+	    				<span class="nav-toggle__item">
+	    					Menu
+	    				</span>
+	    			</button>
+	    
+	    			<nav class="nav" id="nav">
 	    				<ul class="nav__menu">
 	    					<li class="nav__item">
-	    						<a href="#" class="nav__link has-subnav">Инструкции iHerb</a>
+	    						<a href="#" class="nav__link has-subnav" data-subnav="has-subnav">Инструкции iHerb</a>
 	    						<ul class="subnav">
 	    							<li>
-	    								<a href="#" class="subnav__link">Биосил</a>
+	    								<a href="article.html" class="subnav__link">Биосил</a>
 	    							</li>
 	    							<li>
-	    								<a href="#" class="subnav__link">Бузина</a>
+	    								<a href="article.html" class="subnav__link">Бузина</a>
 	    							</li>
 	    							<li>
-	    								<a href="#" class="subnav__link">Клетчатка</a>
+	    								<a href="article.html" class="subnav__link">Клетчатка</a>
 	    							</li>
 	    						</ul>
 	    					</li>
@@ -86,16 +92,38 @@
 	    	</div> <!-- Container-->
 	    </section> <!-- Intro -->
 	    
+	    <div class="scroll-top" id="btn-scroll-top">Top</div>
+	    
 	    <!-- Promo-nav -->
 	    <div class="container">
 	    	<div class="promo-nav">
 	    		<div class="promo-nav__item">
 	    			<div class="promo-nav__img">
-	    				<a href="#">
+	    				<a href="#" data-scroll="#iherb-sales">
 	    					<img src="https://via.placeholder.com/200x200" alt="">
 	    				</a>
 	    
-	    				<a href="#" class="promo-nav__link">Скидки на бренды iHerb</a>
+	    				<a href="#" class="btn btn--noround" data-scroll="#iherb-sales">Скидки iHerb</a>
+	    			</div>
+	    		</div>
+	    
+	    		<div class="promo-nav__item">
+	    			<div class="promo-nav__img">
+	    				<a href="#" data-scroll="#brand-sales">
+	    					<img src="https://via.placeholder.com/200x200" alt="">
+	    				</a>
+	    
+	    				<a href="#" class="btn btn--noround" data-scroll="#brand-sales">Скидки на бренды iHerb</a>
+	    			</div>
+	    		</div>
+	    
+	    		<div class="promo-nav__item">
+	    			<div class="promo-nav__img">
+	    				<a href="#" data-scroll="#promocodes">
+	    					<img src="https://via.placeholder.com/200x200" alt="">
+	    				</a>
+	    
+	    				<a href="#" class="btn btn--noround" data-scroll="#promocodes">Промокоды iHerb</a>
 	    			</div>
 	    		</div>
 	    
@@ -105,7 +133,7 @@
 	    					<img src="https://via.placeholder.com/200x200" alt="">
 	    				</a>
 	    
-	    				<a href="#" class="promo-nav__link">Скидки на бренды iHerb</a>
+	    				<a href="#" class="btn btn--noround">Скидки на бренды iHerb</a>
 	    			</div>
 	    		</div>
 	    
@@ -115,33 +143,13 @@
 	    					<img src="https://via.placeholder.com/200x200" alt="">
 	    				</a>
 	    
-	    				<a href="#" class="promo-nav__link">Скидки на бренды iHerb</a>
-	    			</div>
-	    		</div>
-	    
-	    		<div class="promo-nav__item">
-	    			<div class="promo-nav__img">
-	    				<a href="#">
-	    					<img src="https://via.placeholder.com/200x200" alt="">
-	    				</a>
-	    
-	    				<a href="#" class="promo-nav__link">Скидки на бренды iHerb</a>
-	    			</div>
-	    		</div>
-	    
-	    		<div class="promo-nav__item">
-	    			<div class="promo-nav__img">
-	    				<a href="#">
-	    					<img src="https://via.placeholder.com/200x200" alt="">
-	    				</a>
-	    
-	    				<a href="#" class="promo-nav__link">Скидки на бренды iHerb</a>
+	    				<a href="#" class="btn btn--noround">Скидки на бренды iHerb</a>
 	    			</div>
 	    		</div>
 	    	</div> <!-- Promo-nav -->
 	    </div> <!-- Container -->
 	    
-	    <div class="promo-section promo-section--green">
+	    <div class="promo-section promo-section--green" id="iherb-sales">
 	    	<div class="container">
 	    		<div class="promo__text">
 	    			<h2 class="promo__title">СКИДКИ АЙХЕРБ И ПРОМОКОДЫ iHerb НА <b>ДЕКАБРЬ</b> 2020:</h2>
@@ -165,7 +173,7 @@
 	    						Дополнительная скидка 5% в корзине по коду:
 	    						<span>KRB746</span>
 	    					</div>
-	    					<a href="#" class="card__link">Купить со скидкой</a>
+	    					<a href="#" class="btn btn--card">Купить со скидкой</a>
 	    				</div>
 	    			</div>
 	    
@@ -183,7 +191,7 @@
 	    						Дополнительная скидка 5% в корзине по коду:
 	    						<span>KRB746</span>
 	    					</div>
-	    					<a href="#" class="card__link">Купить со скидкой</a>
+	    					<a href="#" class="btn btn--card">Купить со скидкой</a>
 	    				</div>
 	    			</div>
 	    
@@ -197,7 +205,7 @@
 	    				</div>
 	    				<p class="card__text">Набор из 9 масок для лица, в сумме их стоимость в 2 раза больше цены набора, поэтому предложение очень выгодное и подойдёт на подарок.Осталось лишь несколько штук!</p>
 	    				<div class="card__footer">
-	    					<a href="#" class="card__link">Купить со скидкой</a>
+	    					<a href="#" class="btn btn--card">Купить со скидкой</a>
 	    				</div>
 	    			</div>
 	    
@@ -213,7 +221,7 @@
 	    				<p class="card__text">Набор из 9 масок для лица, в сумме их стоимость в 2 раза больше цены набора, поэтому предложение очень выгодное и подойдёт на подарок.Осталось лишь несколько штук!</p>
 	    
 	    				<div class="card__footer">
-	    					<a href="#" class="card__link">Купить со скидкой</a>
+	    					<a href="#" class="btn btn--card">Купить со скидкой</a>
 	    				</div>
 	    			</div>
 	    
@@ -227,14 +235,14 @@
 	    				</div>
 	    				<p class="card__text">Набор из 9 масок для лица, в сумме их стоимость в 2 раза больше цены набора, поэтому предложение очень выгодное и подойдёт на подарок.Осталось лишь несколько штук!</p>
 	    				<div class="card__footer">
-	    					<a href="#" class="card__link">Купить со скидкой</a>
+	    					<a href="#" class="btn btn--card">Купить со скидкой</a>
 	    				</div>
 	    			</div>
 	    		</div>
 	    	</div> <!-- Container -->
 	    </div> <!-- Promo-section -->
 	    
-	    <div class="promo-section">
+	    <div class="promo-section" id="brand-sales">
 	    	<div class="container">
 	    		<div class="promo__text">
 	    			<h2 class="promo__title">Скидки на БРЕНДЫ iHerb на ДЕКАБРЬ</b> 2020:</h2>
@@ -291,7 +299,7 @@
 	    
 	    
 	    <!-- Promo-section -->
-	    <div class="promo-section promo-section--green">
+	    <div class="promo-section promo-section--green" id="promocodes">
 	    	<div class="container">
 	    		<div class="promo__text">
 	    			<h2 class="promo__title">Промокоды Айхерб на ДЕКАБРЬ</b> 2020</h2>
@@ -311,7 +319,7 @@
 	    					<div class="promocode__text">Код iHerb <strong>KRB746</strong> дает <strong>Скидку 10%</strong> на любой заказ на Айхерб для постоянных и новых покупателей.</div>
 	    					<div class="promocode__wrap">
 	    						<div class="promocode__coupon"><a href="#" target="_blank">KRB746</a></div>
-	    						<a class="promocode__link" href="#" target="_blank">Прописать промокод в корзине</a>
+	    						<a class="btn btn--promo" href="#" target="_blank">Прописать промокод в корзине</a>
 	    					</div>
 	    				</div>
 	    			</div>
@@ -328,7 +336,7 @@
 	    					<div class="promocode__title"><a href="#" target="_blank">🎁 Код на скидку на iHerb</a></div>
 	    					<div class="promocode__text">Код iHerb <strong>KRB746</strong> дает <strong>Скидку 5%</strong> на любой заказ на Айхерб для постоянных и новых покупателей.</div>
 	    					<div class="promocode__wrap">
-	    						<a class="promocode__link" href="#" target="_blank">Прописать промокод в корзине</a>
+	    						<a class="btn btn--promo" href="#" target="_blank">Прописать промокод в корзине</a>
 	    					</div>
 	    				</div>
 	    			</div>
@@ -343,7 +351,7 @@
 	    					<div class="promocode__title"><a href="#" target="_blank">🎁 Код на скидку на iHerb</a></div>
 	    					<div class="promocode__text">Код iHerb <strong>KRB746</strong> дает <strong>Скидку 5%</strong> на любой заказ на Айхерб для постоянных и новых покупателей.</div>
 	    					<div class="promocode__wrap">
-	    						<a class="promocode__link" href="#" target="_blank">Прописать промокод в корзине</a>
+	    						<a class="btn btn--promo" href="#" target="_blank">Прописать промокод в корзине</a>
 	    					</div>
 	    				</div>
 	    			</div>
@@ -359,23 +367,58 @@
 	     		<div class="contact__text">Напишите нам и мы с радостью вам ответитим :)</div>
 	    
 	     		<form class="contact__form" action="/" method="post">
-	     		<input class="contact__input" type="text" name="Name" placeholder="Имя">
-	     		<input class="contact__input" type="email" name="Email" placeholder="E-mail">
+	     		<input class="contact__input" type="text" name="Name" placeholder="Имя" required>
+	     		<input class="contact__input" type="email" name="Email" placeholder="E-mail" required>
 	     		<textarea class="contact__textarea" type="text" name="Comment">Ваш вопрос</textarea>
-	     		<button class="contact__btn" type="submit">Отправить</button>
+	     		<button class="btn btn--subscribe" type="submit">Отправить</button>
 	     	</form>
 	     	</div>
-	    
 	     </div>
 	    
 
 	    <footer class="footer">
+	    	<div class="container">
+	    		<div class="footer__inner">
+	    			<div class="footer__col">
+	    				<form class="subscribe-form" method="/" action="post">
+	    					<div class="subscribe-form__title">LikeHerb — свежие скидки Айхерб, промокоды iHerb, статьи о витаминах и минералах для здоровья и продления молодости. Подпишись чтобы не пропустить актуальные скидки.</div>
+	    					<input class="subscribe-form__input" type="email" name="sub-email" placeholder="E-mail" required>
+	    					<button class="btn btn--subscribe" type="submit">Подписаться</button>
+	    				</form>
+	    			</div>
 	    
+	    			<div class="footer__col">
+	    				<div class="social">
+	    					<div class="social__text">Напиши нам в соц. сетях:</div>
+	    					<div class="social__links">
+	    						<a href="https://www.facebook.com/">
+	    							<i class="icon-facebook"></i>
+	    						</a>
+	    						<a href="https://www.instagram.com/">
+	    							<i class="icon-instagram"></i>
+	    
+	    						</a>
+	    						<a href="https://web.telegram.org/">
+	    							<i class="icon-telegram"></i>
+	    						</a>
+	    					</div>
+	    					<div class="social__text">Контактный адрес эл. почты: <a href= "mailto: abc@gmail.com">abc@gmail.com</a></div>
+	    				</div>
+	    
+	    				<div class="footer__text">Likeherb 2020 Все права принадлежат их владельцам. Копирование материалов сайта abc.com запрещено правообладателем.</div>
+	    			</div>
+	    
+	    			<div class="footer__col">
+	    				<div class="footer__text">Вебсайт Likeherb не представляет ничьи официальные интересы, не является официальным источником информации ни для какого бренда, интернет-магазина либо другого проекта, название которого встречается на страницах сайта abc.com, в блоге, в записях или сообщениях официальных групп или страниц в социальных сетях, связанных с сайтом LikeHerb.</div>
+	    			</div>
+	    		</div> <!-- /footer__inner -->
+	    	</div> <!-- /Container -->
 	    </footer>
 
     </div>
 
     <!-- JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
     <script src="assets/js/app.js"></script>
 </body>
 </html>

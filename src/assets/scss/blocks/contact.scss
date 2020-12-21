@@ -1,7 +1,11 @@
 .contact {
-	margin: 4rem;
+	margin: 4rem 0;
 	text-align: center;
 	color: $secondary;
+
+	@media (max-width: 576px) {
+		margin: 2rem 0;
+	}
 }
 
 .contact__title {
@@ -9,12 +13,22 @@
 
 	font-weight: 500;
 	font-size: 4.2rem;
+
+	@media (max-width: 576px) {
+		font-size: 3rem;
+	}
 }
 
 .contact__text {
 	margin-bottom: 5rem;
 
 	font-size: 2rem;
+
+	@media (max-width: 576px) {
+		margin-bottom: 2rem;
+
+		font-size: 1.8rem;
+	}
 }
 
 .contact__form {
@@ -37,10 +51,13 @@
 	border-bottom: 1px solid $secondary;
 	color: inherit;
 	font-size: 1.6rem;
+
+	@media (max-width: 576px) {
+		font-size: 1.4rem;
+	}
 }
 
 .contact__input {
-
 
 	&::placeholder {
 		font-size: 1.4rem;
@@ -57,18 +74,4 @@
 
 	resize: none;
 	font-family: inherit;
-
-}
-
-.contact__btn {
-	padding: 1rem;
-	min-width: 140px;
-
-	background-color: $primary;
-	color: $gray;
-	font-weight: 500;
-	font-size: 1.6rem;
-	border: none;
-	border-radius: 10px;
-
 }

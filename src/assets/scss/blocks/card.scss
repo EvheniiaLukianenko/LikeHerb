@@ -18,7 +18,9 @@
 }
 
 .card__item {
-	width: 31.6944%;
+	flex: 0 1 31%;
+	max-width: 380px;
+
 	margin: 1rem;
 	padding: 1rem;
 
@@ -31,7 +33,7 @@
 	overflow: hidden;
 
 	&--small {
-		width: 15.0281%;
+		max-width: 160px;
 
 		.card__text {
 			margin-bottom: 1rem;
@@ -51,6 +53,22 @@
 			text-decoration: underline;
 		}
 	}
+
+	@media (max-width: 1200px) {
+		flex: 0 1 47%;
+	}
+
+	@media (max-width: 768px) {
+		flex: 0 1 70%;
+	}
+
+	@media (max-width: 576px) {
+		flex: 0 1 100%;
+
+		&--small {
+			flex: 0 1 43%;
+		}
+	}
 }
 
 .card__header {
@@ -62,6 +80,10 @@
 
 	font-size: 2rem;
 	font-weight: 500;
+
+	@media (max-width: 768px) {
+		font-size: 1.8rem;
+	}
 }
 
 .card__img {
@@ -103,20 +125,8 @@
 
 		border-radius: 5px;
 	}
-}
 
-.card__link {
-	display: inline-block;
-	padding: 1.5rem;
-
-	background-color: $primary;
-	border-radius: 10px;
-	font-size: 1.8rem;
-	line-height: 1;
-	color: $gray !important;
-	text-decoration: none;
-
-	&:hover {
-		background-color: darken($primary, 5%);
+	@media (max-width: 576px) {
+		font-size: 1.3rem;
 	}
 }

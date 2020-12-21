@@ -1,14 +1,32 @@
 .nav {
+	display: inline-block;
 	max-width: $nav-width;
 	width: 100%;
 	height: fit-content;
 
 	background-color: $light-green;
 	box-shadow: 0 6px 8px rgba($black, .2);
+
+	@media (max-width: 992px) {
+		display: none;
+
+		position: absolute;
+		top: 70px;
+		right: 0;
+		z-index: 1000;
+
+		max-height: calc(100vh - #{$header-h});
+		overflow-y: scroll;
+		overflow-x: hidden;
+		border-top: 2px solid $gray;
+
+		&.active {
+			display: block;
+		}
+	}
 }
 
 .nav__menu {
-
 
 }
 
@@ -27,7 +45,6 @@
 			background-color: $primary;
 			color: $gray;
 		}
-
 
 		> .subnav {
 			display: block;

@@ -1,6 +1,13 @@
 .header {
+	max-height: $header-h;
+	margin-bottom: 3rem;
+
 	background-color: $primary;
 	color: $white;
+
+	@media (max-width: 576px) {
+		margin-bottom: 2rem;
+	}
 }
 
 .header__inner {
@@ -14,7 +21,7 @@
 	overflow: hidden;
 
 	img {
-		max-height: 80px;
+		max-height: $header-h;
 		width: auto;
 		object-fit: cover;
 	}

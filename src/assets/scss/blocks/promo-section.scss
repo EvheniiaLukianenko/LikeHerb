@@ -1,5 +1,5 @@
 .promo-section {
-	padding: 2rem 0;
+	padding: 4rem 0;
 	text-align: center;
 
 	&--green {
@@ -9,6 +9,10 @@
 			border-bottom: 2px solid $primary;
 			border-top: 2px solid $primary;
 		}
+	}
+
+	@media (max-width: 768px) {
+		padding: 2rem 0;
 	}
 }
 
@@ -20,19 +24,40 @@
 	border-bottom: 2px solid $gray;
 	border-top: 2px solid $gray;
 
+	@media (max-width: 768px) {
+		margin-bottom: 1rem;
+	}
+
 }
 
 .promo__title {
 	margin-bottom: 1rem;
 
 	font-size: 3rem;
+	text-transform: uppercase;
 
 	b {
 		font-weight: 700;
+	}
+
+	@media (max-width: 992px) {
+		font-size: 1.9rem;
+	}
+
+	@media (max-width: 576px) {
+		font-size: 1.6rem;
 	}
 }
 
 .promo__subtitle {
 	font-size: 2.4rem;
 	font-weight: 700;
+
+	@media (max-width: 992px) {
+		font-size: 1.8rem;
+	}
+
+	@media (max-width: 576px) {
+		font-size: 1.5rem;
+	}
 }
